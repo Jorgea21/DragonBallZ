@@ -1,0 +1,184 @@
+/* telefono: 480px;
+tablet: 768px;
+desktop: 992px;
+desktopXL: 1200px; */
+
+
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*,*:before, *:after{
+    box-sizing: inherit;
+}
+
+
+body{
+    padding: 0;
+    margin: 0;
+    background-color: chocolate;
+}
+
+/* .header{ */
+    /* background-color: orange;
+} */
+
+.header_contenido{
+    display: flex;
+    justify-content: space-between;
+      
+}
+.main_title{
+    margin: 10rem;
+    text-align: center;
+    font-size: 3rem;
+}
+
+/* Main */
+.main_container{
+    
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    row-gap: 2rem;
+    margin-top: 10rem;
+
+    img{
+       position: relative;
+       left: 20rem;
+    }   
+}  
+
+.main_image{
+    grid-row: 1 / 2;
+    
+    img{
+        border: 5px solid black;
+        box-shadow: 0 0 0 1rem rgb(219, 58, 0);
+        
+    }
+      
+}
+
+
+.main_descrip{
+    text-align: center;
+    margin: 0 0 0 2rem;
+    font-size: 1.5rem;
+     
+    button{
+        margin: 5rem 1rem;
+        border: none;
+        border-radius: 1rem;
+        padding: 2rem;
+        font-weight: 700;
+    }
+    
+    button:hover{
+        cursor: pointer;
+    }   
+}
+
+/* Botones */
+#esferas{
+    background-color: yellowgreen;
+    border: 5px solid red;
+   
+}
+
+#Cell{
+    background-color: black;
+    border: 5px solid green;
+    color: white;   
+}
+
+#juego{
+    background-color: green;
+}
+
+
+
+@media (min-width: 768px) { 
+    .main_container{
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+    }
+
+    .main_descrip{
+        text-align: start;
+        margin: 0 9rem 0 0;
+
+    }
+
+}
+/* Galeria */
+.galeria{
+    padding: 5rem 0;
+}
+
+.galeria_imagenes{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+   
+    
+    img{
+        border: 5px solid black;
+    }
+
+    @media (min-width: 768px) { 
+       display: grid;
+       grid-template-columns: repeat(5, 1fr);
+       margin-left: 10rem;
+
+       
+    }
+
+    
+
+}
+
+.esferas{
+       @media (min-width: 768px) { 
+         grid-template-columns: repeat(3, 1fr);
+         margin-left: 25rem;
+       }
+       
+        
+}
+
+.batallacell{
+    @media (min-width: 768px) { 
+        grid-template-columns: repeat(4, 1fr);
+        margin-left: 15rem;
+    }
+}
+
+
+
+/* Footer */
+.footer{
+    text-align: center;
+    background: linear-gradient(to left, black , red);
+    position: relative;
+    top: 3rem;
+    font-size: 3rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
