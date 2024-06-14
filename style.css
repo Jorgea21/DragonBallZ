@@ -18,20 +18,22 @@ body{
     padding: 0;
     margin: 0;
     background-color: chocolate;
+    
+}
+
+.contenedor{
+    min-width: 100%;
     overflow-x: hidden;
+   
+    @media (min-width: 768px){ 
+          width: 100%;
+     }
 }
 
 /* .header{ */
     /* background-color: orange;
 } */
-.contenedor{
-    max-width: 100%;
-   
 
-    @media (min-width: 768px) { 
-          width: 100%;
-     }
-}
 
 .header_contenido{
     display: flex;
@@ -183,7 +185,7 @@ body{
     position: relative;
     top: 3rem;
     font-size: 3rem;
-    width: 100%;
+  
 }
 
 
