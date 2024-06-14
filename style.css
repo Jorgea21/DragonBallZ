@@ -23,6 +23,14 @@ body{
 /* .header{ */
     /* background-color: orange;
 } */
+.container{
+    max-width: 100%;
+    overflow-x: hidden;
+
+    @media (min-width: 768px) { 
+          width: 100%;
+     }
+}
 
 .header_contenido{
     display: flex;
@@ -51,6 +59,12 @@ body{
 
 .main_image{
     grid-row: 1 / 2;
+    margin-left: -5rem;
+
+    @media (min-width: 768px) { 
+        margin-right: 0;
+    }
+    
     
     img{
         border: 5px solid black;
