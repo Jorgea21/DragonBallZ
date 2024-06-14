@@ -18,6 +18,7 @@ body{
     padding: 0;
     margin: 0;
     background-color: chocolate;
+    overflow-x: hidden;
 }
 
 /* .header{ */
@@ -25,7 +26,7 @@ body{
 } */
 .contenedor{
     max-width: 100%;
-    overflow-x: hidden;
+   
 
     @media (min-width: 768px) { 
           width: 100%;
@@ -59,10 +60,10 @@ body{
 
 .main_image{
     grid-row: 1 / 2;
-    margin-left: -5rem;
+    margin-left: -15rem;
 
     @media (min-width: 768px) { 
-        margin-right: 0;
+        margin-left: 0;
     }
     
     
